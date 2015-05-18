@@ -1,0 +1,122 @@
+.main {
+	h4{
+		margin-top: 100px;
+		text-align: center;
+		font-family: 'Roboto Slab',sans-serif;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	p {
+		text-align: center;
+		color: transparent;
+		margin: 0 25%;
+		font-family: 'Open Sans',sans-serif;
+		transition: all 0.2s;
+	}
+	.cont-main {
+		@include outer-container(100%);
+		.col-1{
+			@include span-columns(4);
+			height: inherit;
+			margin-right: 0px;
+			width: 33.333333333333%;
+			transition: all 0.2s;
+			&:hover {
+				background-color: rgba(0, 151, 167, 0.95);
+				box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+				p {
+					color: #fff;
+				}
+			}
+		}
+		.col-2{
+			@include span-columns(4);
+			margin-right: 0px;
+			width: 33.333333333333%;
+			transition: background-color 0.2s;
+			&:hover {
+				background-color: rgba(179,134,0,0.95);
+				box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+				p {
+					color: #fff;
+				}
+			}
+		}
+		.col-3{
+			@include span-columns(4);
+			margin-right: 0px;
+			width: 33.333333333333%;
+			transition: background-color 0.2s;
+			&:hover {
+				background-color: rgba(2,149,86,0.95);
+				box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+				p {
+					color: #fff;
+				}
+			}
+		}
+		.glyphicons {
+			display: block;
+			text-align: center;
+			margin: 0 auto;
+			margin-bottom: 100px;
+			width: 200px;
+			height: 200px;
+
+			span {
+				transform: scale(8,8);
+				margin-top: 80px;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.section-3 {
+	height: 1000px;
+}
+
+@media (max-width: 768px) {
+	.main {
+	p {
+		color: #fff;
+	}
+	h4{
+		margin-top: 50px;
+		text-align: center;
+		font-family: 'Roboto Slab',sans-serif;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	.cont-main {
+		@include outer-container(100%);
+		.col-1{
+			background-color: transparent;
+			@include span-columns(12 of 12);
+		}
+		.col-2{
+			background-color: transparent;
+			@include span-columns(12 of 12);
+
+		}
+		.col-3{
+			background-color: transparent;
+			@include span-columns(12 of 12);
+		}
+		.glyphicons {
+			display: block;
+			text-align: center;
+			margin: 0 auto;
+			margin-bottom: 50px;
+			width: 200px;
+			height: 200px;
+
+			span {
+				transform: scale(8,8);
+				margin-top: 80px;
+				color: #fff;
+			}
+		}
+	}
+}
+}
